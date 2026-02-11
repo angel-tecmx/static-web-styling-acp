@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------ */
+/* Global Reset & Font Import           */
+/* ------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ------------------------------------ */
+/* Headers & Font Sizes (Custom Font)   */
+/* ------------------------------------ */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif; /* Descargada de Google Fonts */
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3.2rem; 
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #34495e;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #e6f7ff;
+    padding: 5px 10px;
+    border-left: 5px solid #007bff;
+    font-style: italic;
+}
+
+
+/* ------------------------------------ */
+/* Hyperlinks Styling (LVHA Order)      */
+/* ------------------------------------ */
+nav ul {
+    list-style: none;
+    background-color: #343a40;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Base link style */
+nav a:link, nav a:visited { 
+    color: #b0c4de;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Hover state */
+nav a:hover { /* H */
+    background-color: #007bff;
+    color: white;
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+/* Active state */
+nav a:active { /* A */
+    background-color: #0056b3;
+}
+
+/* External Link Specific Styling */
+a[target="_blank"] {
+    color: #28a745; /* Un color diferente para enlaces externos */
+    border-bottom: 1px dashed #28a745;
+}
+
+a[target="_blank"]:hover {
+    color: #218838;
+    border-bottom: 1px dashed #218838;
+}
+
+
+/* ------------------------------------ */
+/* Table Styling (nth-child, hover)     */
+/* ------------------------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Filas impares con color diferente (zebra effect) */
+tbody tr:nth-child(odd) {
+    background-color: #e9ecef; /* Un gris más claro */
+}
+
+/* Resaltar fila al pasar el mouse */
+tbody tr:hover {
+    background-color: #cce5ff; /* Un azul muy claro */
+    cursor: pointer;
+}
+
+/* ------------------------------------ */
+/* Cards for AI Tools                   */
+/* ------------------------------------ */
+.tool-card {
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.tool-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tool-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ------------------------------------ */
+/* Footer                               */
+/* ------------------------------------ */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #343a40;
+    color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+#main-header {
+    background-color: #1a2a3a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#main-header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#main-header p {
+    font-size: 1.3rem;
+    color: #b0c4de;
+}
